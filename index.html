@@ -34,6 +34,10 @@
                 text-decoration: none;
                 color: rgb(153,130,238);
             }
+            p2{
+                font-size: 26px;
+                color: rgb(153,130,238);
+            }
             .profile-picture{
                 width:90px;
                 height:90px;
@@ -68,6 +72,15 @@
                 border-radius: 20px;
                 box-shadow: 0 0 10px rgba(0,0,0,0.1);
             }
+            .download-button{
+                background: color #333;
+                color:#fff;
+                padding:0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display:inline-block;
+                margin-top: 10px;          
+            }
             .download-button:hover{
                 background-color:yellowgreen;
             }
@@ -86,7 +99,7 @@
             <header>
                 <div class="header-content">
                     <!--Add your profile picture here-->
-                    <img src="C:\priyanka\IMG20210412090907.jpg" alt="Your Profile Picture" class="profile-picture">
+                    <img src="C:\Users\ELCOT\Desktop\naan muthalvan\IMG20210412090907.jpg" alt="Your Profile Picture" class="profile-picture">
                     <h1>Ragavi.M</h1>
                     <p>Passionate on Education...</p> 
                 </div>
@@ -152,8 +165,8 @@
             <div class="section-content">
                 <h2>Projects</h2>
                 <ul>
-                    <li><a herf="#">Project 1</a></li>
-                    <li><a herf="#">Project 2</a></li>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
                     <!--Add more projects link here-->
                 </ul>
             </div>
@@ -162,10 +175,10 @@
             <center>
                 <div class="section-content">
                 <h2>Resume</h2>
-                <a herf="ragavi.docx" class="download-button">Download CV</a>
+                <a href="#"class="ragavi.docx">download CV</a>
                 </div>
             </center>
-        </sectiion>
+        </section>
         <footer>
             <p>&copy.2023 Ragavi M</p>
         </footer>
@@ -175,7 +188,7 @@
                 anchor.addEventListener('click',function(e){
                     e.preventDefault();
                     const targetId=this.getAttribute('herf').substring(1);
-                    const targetElementById=document.getElementById(targetId);
+                    const targetElement=document.getElementById(targetId);
                     if(targetElement)
                     {
                         window.scrollTo({
@@ -184,6 +197,7 @@
                         });
                     }
                 });
+            });       
         </script>
     <body>    
 </html>
